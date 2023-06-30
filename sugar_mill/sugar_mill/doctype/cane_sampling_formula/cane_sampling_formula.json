@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-17 13:55:25.457082",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "minimum_brix",
+  "column_break_it1tt",
+  "maximum_brix",
+  "column_break_3klzl",
+  "minimum_pairs",
+  "column_break_7wtzy",
+  "maximum_pairs"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_3klzl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "minimum_brix",
+   "fieldtype": "Data",
+   "label": "Minimum Brix"
+  },
+  {
+   "fieldname": "minimum_pairs",
+   "fieldtype": "Data",
+   "label": "Minimum Pairs"
+  },
+  {
+   "fieldname": "column_break_it1tt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "maximum_brix",
+   "fieldtype": "Data",
+   "label": "Maximum Brix"
+  },
+  {
+   "fieldname": "column_break_7wtzy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "maximum_pairs",
+   "fieldtype": "Data",
+   "label": "Maximum Pairs"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-05-24 17:23:03.552970",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Cane Sampling Formula",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

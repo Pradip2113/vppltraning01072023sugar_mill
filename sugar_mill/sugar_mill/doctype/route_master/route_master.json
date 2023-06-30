@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{village_route}",
+ "creation": "2023-05-15 15:03:44.732266",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "village",
+  "column_break_0hwi8",
+  "village_route",
+  "column_break_gol88",
+  "village_route_code",
+  "column_break_xpbbm",
+  "distance_km"
+ ],
+ "fields": [
+  {
+   "fieldname": "village",
+   "fieldtype": "Data",
+   "label": "Village"
+  },
+  {
+   "fieldname": "village_route",
+   "fieldtype": "Data",
+   "label": "Village Route"
+  },
+  {
+   "fieldname": "village_route_code",
+   "fieldtype": "Data",
+   "label": "Village Route Code"
+  },
+  {
+   "fieldname": "distance_km",
+   "fieldtype": "Data",
+   "label": "Distance KM"
+  },
+  {
+   "fieldname": "column_break_0hwi8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_gol88",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xpbbm",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-15 15:06:33.714080",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Route Master",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

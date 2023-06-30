@@ -1,0 +1,442 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-05-02 12:40:03.330196",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "season",
+  "amended_from",
+  "column_break_9npn6",
+  "branch",
+  "column_break_vvz7t",
+  "shift",
+  "column_break_tbp8h",
+  "date",
+  "column_break_udht1",
+  "time",
+  "column_break_n7kym",
+  "slip_no",
+  "section_break_uoiyk",
+  "plot_no",
+  "column_break_nl44b",
+  "farmer_code",
+  "column_break_gvftv",
+  "farmer_name",
+  "column_break_yygaj",
+  "field_village",
+  "column_break_l0irc",
+  "area_acre",
+  "column_break_a5r4c",
+  "cane_variety",
+  "section_break_swkkd",
+  "plantation_date",
+  "column_break_jyuxn",
+  "survery_no",
+  "column_break_5daky",
+  "route_name",
+  "column_break_mx4bn",
+  "distance",
+  "section_break_zqobq",
+  "vehicle_type",
+  "column_break_ewxbv",
+  "transporter_code",
+  "column_break_abhrl",
+  "transporter_name",
+  "column_break_3se2z",
+  "harvester_code",
+  "column_break_pipgl",
+  "harvester_name",
+  "column_break_sipbo",
+  "gang_type",
+  "section_break_hgkzi",
+  "cartno",
+  "column_break_4xh55",
+  "vehicle_number",
+  "column_break_xekau",
+  "tolly_1",
+  "column_break_y8ct3",
+  "tolly_2",
+  "column_break_9x4aw",
+  "rope",
+  "section_break_xrk4p",
+  "water_supplier",
+  "column_break_hkbg2",
+  "water_supplier_name",
+  "column_break_xprgm",
+  "water_share",
+  "column_break_xkkqm",
+  "percentage",
+  "uin",
+  "slip_boy"
+ ],
+ "fields": [
+  {
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "label": "Season",
+   "options": "Season"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cane Inward Slip",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "default": "Now",
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "section_break_uoiyk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "plot_no",
+   "fieldtype": "Link",
+   "label": "Plot No",
+   "options": "Crop Harvesting"
+  },
+  {
+   "fetch_from": "plot_no.survey_number",
+   "fieldname": "survery_no",
+   "fieldtype": "Data",
+   "label": "Survery No"
+  },
+  {
+   "fetch_from": "plot_no.area_acrs",
+   "fieldname": "area_acre",
+   "fieldtype": "Float",
+   "label": "Area Acre",
+   "precision": "1"
+  },
+  {
+   "fetch_from": "plot_no.crop_variety",
+   "fieldname": "cane_variety",
+   "fieldtype": "Link",
+   "label": "Cane Variety",
+   "options": "Cane Variety"
+  },
+  {
+   "fieldname": "section_break_zqobq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "plot_no.grower_code",
+   "fieldname": "farmer_code",
+   "fieldtype": "Link",
+   "label": "Farmer Code",
+   "options": "Farmer List"
+  },
+  {
+   "fetch_from": "farmer_code.supplier_name",
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name"
+  },
+  {
+   "fieldname": "transporter_code",
+   "fieldtype": "Link",
+   "label": "Transporter Code",
+   "options": "H and T Contract"
+  },
+  {
+   "fieldname": "transporter_name",
+   "fieldtype": "Data",
+   "label": "Transporter Name"
+  },
+  {
+   "fieldname": "vehicle_type",
+   "fieldtype": "Link",
+   "label": "Vehicle Type",
+   "options": "Vehicle Type"
+  },
+  {
+   "depends_on": "eval:doc.vehicle_type !='BULLOCK CART';",
+   "fieldname": "vehicle_number",
+   "fieldtype": "Data",
+   "label": "Engine Number"
+  },
+  {
+   "fieldname": "section_break_hgkzi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "harvester_code",
+   "fieldtype": "Link",
+   "label": "Harvester Code",
+   "options": "Farmer List"
+  },
+  {
+   "fieldname": "harvester_name",
+   "fieldtype": "Data",
+   "label": "Harvester Name"
+  },
+  {
+   "fieldname": "route_name",
+   "fieldtype": "Data",
+   "label": "Route Name"
+  },
+  {
+   "fetch_from": "plot_no.route",
+   "fieldname": "distance",
+   "fieldtype": "Float",
+   "label": "Distance",
+   "precision": "1"
+  },
+  {
+   "fieldname": "section_break_xrk4p",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "__user",
+   "fieldname": "slip_boy",
+   "fieldtype": "Link",
+   "label": "Slip Boy",
+   "options": "User"
+  },
+  {
+   "fieldname": "percentage",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Percentage",
+   "precision": "1"
+  },
+  {
+   "fieldname": "column_break_9npn6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tbp8h",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_udht1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_nl44b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_yygaj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_l0irc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ewxbv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_abhrl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4xh55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xprgm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pipgl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_9x4aw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xkkqm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cartno",
+   "fieldtype": "Float",
+   "label": "Cart Number",
+   "precision": "0"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "uin",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "UIN"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Plant",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "rope",
+   "fieldtype": "Select",
+   "label": "Rope",
+   "options": "All\ntrailor 1 st\ntrailor  2 nd\n1 st & 2 nd trailor  upper rope\n1 st and 2 nd Bottom rope\n1st trailor all & 2nd  trailor  Upper Rope\n1st trailor all & 2nd  trailor  Bottom Rope\n1st trailor  upper rope\n1st trailor  Bottom rope\n2nd trailor all & 1st  trailor  Upper Rope\n2nd trailor  Bottom rope\nTL Middle Rope\nTL Middle Rope 1\nTL Bottom Rope\nTL Bottom & Middle Rope\nTL Top& Middle Rope\n2nd trailor all & 1st trailor  upper rope\n2nd trailor upper rope\nTL Middle Rope 2"
+  },
+  {
+   "fieldname": "column_break_a5r4c",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "plot_no.plantattion_ratooning_date",
+   "fieldname": "plantation_date",
+   "fieldtype": "Date",
+   "label": "Plantation Date"
+  },
+  {
+   "fieldname": "column_break_xekau",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "plot_no.area",
+   "fieldname": "field_village",
+   "fieldtype": "Link",
+   "label": "Field Village",
+   "options": "Village"
+  },
+  {
+   "fieldname": "column_break_gvftv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_swkkd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_jyuxn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_5daky",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mx4bn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.vehicle_type !='TRUCK' && doc.vehicle_type !='BULLOCK CART';",
+   "fieldname": "tolly_1",
+   "fieldtype": "Data",
+   "label": "Tolly 1"
+  },
+  {
+   "fieldname": "column_break_y8ct3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.vehicle_type !='TRUCK' && doc.vehicle_type !='BULLOCK CART';",
+   "fieldname": "tolly_2",
+   "fieldtype": "Data",
+   "label": "Tolly 2"
+  },
+  {
+   "fieldname": "column_break_3se2z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "water_share",
+   "fieldtype": "Float",
+   "label": "Water Share (%)",
+   "precision": "1"
+  },
+  {
+   "fieldname": "water_supplier",
+   "fieldtype": "Link",
+   "label": "Water Supplier Code",
+   "options": "Farmer List"
+  },
+  {
+   "fieldname": "column_break_hkbg2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "water_supplier.supplier_name",
+   "fieldname": "water_supplier_name",
+   "fieldtype": "Data",
+   "label": "Water Supplier Name"
+  },
+  {
+   "fieldname": "column_break_vvz7t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "slip_no",
+   "fieldtype": "Int",
+   "label": "Slip No",
+   "precision": "0"
+  },
+  {
+   "fieldname": "column_break_n7kym",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Select",
+   "label": "Shift",
+   "options": "1st\n2nd\n3rd"
+  },
+  {
+   "fieldname": "column_break_sipbo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "transporter_code.gang_type",
+   "fieldname": "gang_type",
+   "fieldtype": "Link",
+   "label": "Gang Type",
+   "options": "Gang Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Cane Weight",
+   "link_fieldname": "plot_no"
+  }
+ ],
+ "modified": "2023-06-11 15:38:31.929170",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Cane Inward Slip",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

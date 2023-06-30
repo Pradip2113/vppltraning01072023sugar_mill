@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-06-22 20:43:37.319453",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "season",
+  "column_break_cnot2",
+  "plant",
+  "section_break_fise5",
+  "items",
+  "section_break_xvzqk",
+  "test",
+  "column_break_be41j",
+  "limit_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "label": "Season",
+   "options": "Season"
+  },
+  {
+   "fieldname": "column_break_cnot2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "label": "Plant",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "section_break_fise5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "options": "Season Wise Advance Item"
+  },
+  {
+   "fieldname": "test",
+   "fieldtype": "Link",
+   "label": "test",
+   "options": "Season Wise Advance Item"
+  },
+  {
+   "fieldname": "column_break_be41j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "limit_amount",
+   "fieldtype": "Currency",
+   "label": "Limit Amount"
+  },
+  {
+   "fieldname": "section_break_xvzqk",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-23 13:27:29.543679",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Season Wise Advance",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

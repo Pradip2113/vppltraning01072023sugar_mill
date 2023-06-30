@@ -1,0 +1,287 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{season}-{cane_registration_id}-AREA-{area}-{#}",
+ "creation": "2023-03-22 17:54:08.625448",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "season",
+  "column_break_fj3wq",
+  "cane_registration_id",
+  "column_break_iqci7",
+  "supplier",
+  "column_break_mkfmf",
+  "grower_name",
+  "column_break_pi8ti",
+  "village",
+  "section_break_21",
+  "branch",
+  "section_break_86xny",
+  "crop_type",
+  "column_break_jeiqa",
+  "crop_variety",
+  "column_break_dn6vw",
+  "date",
+  "column_break_2",
+  "area",
+  "column_break_j9bjl",
+  "development_area",
+  "column_break_vxwyi",
+  "route",
+  "section_break_2",
+  "basel",
+  "column_break_10",
+  "pre_earthing",
+  "column_break_14",
+  "earth",
+  "column_break_16",
+  "rainy",
+  "column_break_19",
+  "ratoon_1",
+  "column_break_b8vu5",
+  "ratoon_2",
+  "update",
+  "section_break_10",
+  "agriculture_development_item",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "basel",
+   "fieldtype": "Check",
+   "label": "Basel"
+  },
+  {
+   "default": "0",
+   "fieldname": "pre_earthing",
+   "fieldtype": "Check",
+   "label": "Pre-Earthing"
+  },
+  {
+   "default": "0",
+   "fieldname": "earth",
+   "fieldtype": "Check",
+   "label": "Earth"
+  },
+  {
+   "default": "0",
+   "fieldname": "rainy",
+   "fieldtype": "Check",
+   "label": "Rainy"
+  },
+  {
+   "fieldname": "update",
+   "fieldtype": "Button",
+   "label": "Update"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Agriculture Development",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "agriculture_development_item",
+   "fieldtype": "Table",
+   "label": "Agriculture Development Item",
+   "options": "Agriculture Development Item"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "cane_registration_id.grower_code",
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Grower Code",
+   "options": "Supplier"
+  },
+  {
+   "fetch_from": "cane_registration_id.area_acrs",
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area in Acrs"
+  },
+  {
+   "fetch_from": "cane_registration_id.plantattion_ratooning_date",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Plantation Date"
+  },
+  {
+   "fetch_from": "cane_registration_id.area",
+   "fieldname": "village",
+   "fieldtype": "Data",
+   "label": "Village"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "K.M."
+  },
+  {
+   "fieldname": "cane_registration_id",
+   "fieldtype": "Link",
+   "label": "Cane Registration ID",
+   "options": "Cane Master"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "cane_registration_id.crop_type",
+   "fieldname": "crop_type",
+   "fieldtype": "Link",
+   "label": "Crop Type",
+   "options": "Crop Type"
+  },
+  {
+   "fetch_from": "cane_registration_id.crop_variety",
+   "fieldname": "crop_variety",
+   "fieldtype": "Link",
+   "label": "Crop Variety",
+   "options": "Cane Variety"
+  },
+  {
+   "fetch_from": "cane_registration_id.grower_name",
+   "fieldname": "grower_name",
+   "fieldtype": "Data",
+   "label": "Grower Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "ratoon_1",
+   "fieldtype": "Check",
+   "label": "Ratoon 1"
+  },
+  {
+   "fieldname": "column_break_b8vu5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ratoon_2",
+   "fieldtype": "Check",
+   "label": "Ratoon 2"
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "label": "Season",
+   "options": "Season"
+  },
+  {
+   "fetch_from": "cane_registration_id.plant_name",
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Plant",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "column_break_iqci7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jeiqa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dn6vw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mkfmf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "development_area",
+   "fieldtype": "Float",
+   "label": "Development Area (Acar)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_pi8ti",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fj3wq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_j9bjl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_86xny",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_vxwyi",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Sales Order",
+   "link_fieldname": "agriculture_order"
+  }
+ ],
+ "modified": "2023-06-29 16:18:56.245119",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Agriculture Development",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

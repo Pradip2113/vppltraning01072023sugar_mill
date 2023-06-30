@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-04-08 17:49:50.570885",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_fmglt",
+  "cart_no",
+  "trolly_1",
+  "trolly_2",
+  "section_break_ggvwq",
+  "issue_date",
+  "submit_date",
+  "no_of_days",
+  "driver_name"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "trolly_1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trolly 1",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "trolly_2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trolly 2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_fmglt",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "section_break_ggvwq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "cart_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Cart No"
+  },
+  {
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Driver Name"
+  },
+  {
+   "columns": 1,
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "submit_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Submit Date"
+  },
+  {
+   "fieldname": "no_of_days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "No of Days",
+   "precision": "1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-14 16:09:37.592494",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Vehicle Registration item",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

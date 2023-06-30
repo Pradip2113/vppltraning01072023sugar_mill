@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-26 12:54:17.767849",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "member_type",
+  "section_break_pszoq",
+  "party",
+  "column_break_euepl",
+  "party_name",
+  "column_break_hntrd",
+  "village",
+  "section_break_bnalj",
+  "share_type",
+  "column_break_g7a38",
+  "column_break_uojy6",
+  "application_no",
+  "section_break_lukau",
+  "no_of_shares",
+  "column_break_oykie",
+  "face_value",
+  "column_break_lhwqc",
+  "member_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "member_type",
+   "fieldtype": "Link",
+   "label": "Member Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Dynamic Link",
+   "label": "Party",
+   "options": "member_type"
+  },
+  {
+   "fieldname": "section_break_pszoq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_euepl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Data",
+   "label": "Party Name"
+  },
+  {
+   "fieldname": "column_break_hntrd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Data",
+   "label": "Village"
+  },
+  {
+   "fieldname": "section_break_bnalj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "share_type",
+   "fieldtype": "Select",
+   "label": "Share Type",
+   "options": "General"
+  },
+  {
+   "fieldname": "column_break_g7a38",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_uojy6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "application_no",
+   "fieldtype": "Data",
+   "label": "Application No"
+  },
+  {
+   "fieldname": "section_break_lukau",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "no_of_shares",
+   "fieldtype": "Float",
+   "label": "No of Shares",
+   "precision": "0"
+  },
+  {
+   "fieldname": "column_break_oykie",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "face_value",
+   "fieldtype": "Float",
+   "label": "Face Value",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_lhwqc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "member_no",
+   "fieldtype": "Data",
+   "label": "Member No"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-26 13:03:06.239323",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Shares Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

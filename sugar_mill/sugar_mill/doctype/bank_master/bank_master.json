@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:branch_code",
+ "creation": "2023-06-27 14:10:42.472325",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "branch_code",
+  "bank_name",
+  "branch",
+  "main_branch",
+  "is_society",
+  "ifsc_code",
+  "section_break_xpwep",
+  "nationalize_bank",
+  "co_bank_account_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Bank Name",
+   "options": "Bank Name"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Branch",
+   "options": "Bank Branch"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_society",
+   "fieldtype": "Check",
+   "label": "Is Society "
+  },
+  {
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "IFSC Code"
+  },
+  {
+   "fieldname": "branch_code",
+   "fieldtype": "Data",
+   "label": "Branch Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "main_branch",
+   "fieldtype": "Link",
+   "label": "Main Branch (head Office)",
+   "options": "Bank Head Office"
+  },
+  {
+   "fieldname": "section_break_xpwep",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "co_bank_account_no",
+   "fieldtype": "Data",
+   "label": "Co. Bank Account no"
+  },
+  {
+   "fieldname": "nationalize_bank",
+   "fieldtype": "Link",
+   "label": "Nationalize Bank",
+   "options": "Bank Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-30 12:48:00.357487",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Bank Master",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "branch"
+}

@@ -1,0 +1,251 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{date}-{####}",
+ "creation": "2023-05-26 15:54:33.509593",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "crop_plantation_dates_section",
+  "from_date",
+  "column_break_tnqrd",
+  "to_date",
+  "column_break_plban",
+  "season",
+  "section_break_zu5qf",
+  "column_break_zbh6k",
+  "column_break_6ncjh",
+  "column_break_hkdm3",
+  "column_break_ltjbf",
+  "column_break_yanuf",
+  "column_break_fviit",
+  "select_all_records_for_sampling",
+  "column_break_bbrqg",
+  "column_break_qpl8k",
+  "circle_office",
+  "column_break_f4fny",
+  "village",
+  "column_break_6rjla",
+  "crop_variety",
+  "column_break_gsc4h",
+  "crop_type",
+  "section_break_r4bpo",
+  "issue_list",
+  "column_break_rksv0",
+  "column_break_wsqgo",
+  "column_break_r5oyn",
+  "column_break_vxvui",
+  "column_break_dferj",
+  "check",
+  "section_break_byg1o",
+  "cane_harvesting_data",
+  "date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "crop_plantation_dates_section",
+   "fieldtype": "Section Break",
+   "label": "Crop Plantation Dates"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_tnqrd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_plban",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "2023-24",
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "label": " Season",
+   "options": "Season",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_zu5qf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_zbh6k",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_6ncjh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hkdm3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ltjbf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_yanuf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fviit",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "select_all_records_for_sampling",
+   "fieldtype": "Check",
+   "label": "Select All Records for sampling"
+  },
+  {
+   "fieldname": "column_break_bbrqg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_qpl8k",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.select_all_records_for_sampling !='1';",
+   "fieldname": "circle_office",
+   "fieldtype": "Table MultiSelect",
+   "label": "Circle Office",
+   "options": "Circle Office Link"
+  },
+  {
+   "fieldname": "column_break_f4fny",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.select_all_records_for_sampling !='1';",
+   "fieldname": "village",
+   "fieldtype": "Table MultiSelect",
+   "label": "Village",
+   "options": "Village Link"
+  },
+  {
+   "fieldname": "column_break_6rjla",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.select_all_records_for_sampling !='1';",
+   "fieldname": "crop_variety",
+   "fieldtype": "Table MultiSelect",
+   "label": "Crop variety",
+   "options": "Crop Variety Link"
+  },
+  {
+   "fieldname": "column_break_gsc4h",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.select_all_records_for_sampling !='1';",
+   "fieldname": "crop_type",
+   "fieldtype": "Table MultiSelect",
+   "label": "Crop Type",
+   "options": "Crop Type Link"
+  },
+  {
+   "fieldname": "section_break_r4bpo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "issue_list",
+   "fieldtype": "Button",
+   "label": "Issue List"
+  },
+  {
+   "fieldname": "column_break_rksv0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wsqgo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_r5oyn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vxvui",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dferj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "check",
+   "fieldtype": "Button",
+   "label": "Select All"
+  },
+  {
+   "fieldname": "section_break_byg1o",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Back To Sampling",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "cane_harvesting_data",
+   "fieldtype": "Table",
+   "label": "Cane Harvesting Data",
+   "options": "Child Cane Harvesting Data"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-27 12:10:06.327695",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Back To Sampling",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

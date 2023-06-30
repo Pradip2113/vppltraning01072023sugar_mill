@@ -1,0 +1,192 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-09 15:47:03.774401",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "b_sugar_free_sale",
+  "b_sugar_trading_sale_factory",
+  "b_sugar_trading_sale_other_factory",
+  "b_sugar_export_sale",
+  "b_sugar_stock_transfer",
+  "b_bagasse_sale",
+  "b_pressmud_sale",
+  "b_distillery_sale",
+  "b_distillery_sale_other",
+  "b_other_sale",
+  "b_fertiliser_sale",
+  "b_power_sale",
+  "column_break_qj7vn",
+  "n_sugar_free_sale",
+  "n_sugar_trading_sale_factory",
+  "n_sugar_trading_sale_other_factory",
+  "n_sugar_export_sale",
+  "n_sugar_stock_transfer",
+  "n__bagasse_sale",
+  "n_pressmud_sale",
+  "n_other_sale",
+  "n_fertiliser_sale",
+  "n_molasses_sale"
+ ],
+ "fields": [
+  {
+   "default": "1",
+   "fieldname": "b_sugar_free_sale",
+   "fieldtype": "Data",
+   "label": "B SUGAR FREE SALE"
+  },
+  {
+   "default": "1",
+   "fieldname": "b_sugar_trading_sale_factory",
+   "fieldtype": "Data",
+   "label": "B SUGAR TRADING SALE (FACTORY)"
+  },
+  {
+   "default": "1",
+   "fieldname": "b_sugar_trading_sale_other_factory",
+   "fieldtype": "Data",
+   "label": "B SUGAR TRADING SALE (OTHER FACTORY)"
+  },
+  {
+   "default": "1",
+   "fieldname": "b_sugar_export_sale",
+   "fieldtype": "Data",
+   "label": "B SUGAR EXPORT SALE"
+  },
+  {
+   "default": "1",
+   "fieldname": "b_sugar_stock_transfer",
+   "fieldtype": "Data",
+   "label": "B SUGAR STOCK TRANSFER"
+  },
+  {
+   "default": "1",
+   "fieldname": "b_bagasse_sale",
+   "fieldtype": "Data",
+   "label": "B BAGASSE SALE"
+  },
+  {
+   "default": "1",
+   "fieldname": "b_pressmud_sale",
+   "fieldtype": "Data",
+   "label": "B PRESSMUD SALE"
+  },
+  {
+   "default": "1",
+   "fieldname": "b_distillery_sale",
+   "fieldtype": "Data",
+   "label": "B DISTILLERY SALE"
+  },
+  {
+   "default": "1",
+   "fieldname": "b_other_sale",
+   "fieldtype": "Data",
+   "label": "B OTHER SALE"
+  },
+  {
+   "default": "1",
+   "fieldname": "b_fertiliser_sale",
+   "fieldtype": "Data",
+   "label": "B FERTILISER SALE"
+  },
+  {
+   "default": "1",
+   "fieldname": "b_power_sale",
+   "fieldtype": "Data",
+   "label": "B POWER SALE"
+  },
+  {
+   "fieldname": "column_break_qj7vn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "n_sugar_free_sale",
+   "fieldtype": "Data",
+   "label": "N SUGAR FREE SALE"
+  },
+  {
+   "default": "1",
+   "fieldname": "n_sugar_trading_sale_factory",
+   "fieldtype": "Data",
+   "label": "N SUGAR TRADING SALE (FACTORY)"
+  },
+  {
+   "default": "1",
+   "fieldname": "n_sugar_trading_sale_other_factory",
+   "fieldtype": "Data",
+   "label": "N SUGAR TRADING SALE (OTHER FACTORY)"
+  },
+  {
+   "default": "1",
+   "fieldname": "n_sugar_export_sale",
+   "fieldtype": "Data",
+   "label": "N SUGAR EXPORT SALE"
+  },
+  {
+   "default": "1",
+   "fieldname": "n_sugar_stock_transfer",
+   "fieldtype": "Data",
+   "label": "N SUGAR STOCK TRANSFER"
+  },
+  {
+   "default": "1",
+   "fieldname": "n__bagasse_sale",
+   "fieldtype": "Data",
+   "label": "N  BAGASSE SALE"
+  },
+  {
+   "default": "1",
+   "fieldname": "n_pressmud_sale",
+   "fieldtype": "Data",
+   "label": "N PRESSMUD SALE"
+  },
+  {
+   "default": "1",
+   "fieldname": "n_other_sale",
+   "fieldtype": "Data",
+   "label": "N OTHER SALE"
+  },
+  {
+   "default": "1",
+   "fieldname": "n_fertiliser_sale",
+   "fieldtype": "Data",
+   "label": "N FERTILISER SALE"
+  },
+  {
+   "fieldname": "b_distillery_sale_other",
+   "fieldtype": "Data",
+   "label": "B DISTILLERY SALE (Other)"
+  },
+  {
+   "fieldname": "n_molasses_sale",
+   "fieldtype": "Data",
+   "label": "N Molasses Sale"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-05-25 12:40:54.796665",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Sales Invoice Document Numbering Counter",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

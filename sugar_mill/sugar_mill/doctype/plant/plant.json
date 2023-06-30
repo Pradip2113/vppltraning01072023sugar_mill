@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:plant",
+ "creation": "2023-03-22 16:40:40.147786",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plant_name_section",
+  "plant"
+ ],
+ "fields": [
+  {
+   "fieldname": "plant",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plant",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "plant_name_section",
+   "fieldtype": "Section Break",
+   "label": "Plant Name (\u0915\u0943\u092a\u092f\u093e \u092f\u0941\u0928\u093f\u091f\u091a\u0947 \u0928\u093e\u0935 \u092a\u094d\u0930\u0935\u093f\u0937\u094d\u091f \u0915\u0930\u093e)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-25 15:23:50.249083",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Plant",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,211 @@
+{
+ "actions": [],
+ "autoname": "format:{season}-{h_and_t_contract}",
+ "creation": "2023-04-08 17:52:36.969389",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vehicle_contract_section",
+  "h_and_t_contract",
+  "vehicle_number",
+  "column_break_qhsdf",
+  "contractor_name",
+  "vehicle_type",
+  "column_break_auaib",
+  "total_numbers_of_vehicle",
+  "trolly__1",
+  "column_break_zbxc4",
+  "transporter_code",
+  "trolly_2",
+  "column_break_brh7n",
+  "season",
+  "section_break_tpbov",
+  "vehicle_details_tab",
+  "no_of_vehicle",
+  "amended_from",
+  "vehicle__reporting_section",
+  "column_break_gg0uh",
+  "column_break_oc4x2",
+  "report_date",
+  "column_break_yluyt",
+  "reporter_name",
+  "column_break_mxpru",
+  "section_break_7vzt3",
+  "vehicle_reporting"
+ ],
+ "fields": [
+  {
+   "fieldname": "contractor_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Contractor Name",
+   "options": "H and T Group"
+  },
+  {
+   "fieldname": "vehicle_details_tab",
+   "fieldtype": "Table",
+   "label": "Vehicle Details",
+   "options": "Vehicle Registration item"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Vehicle Registration",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qhsdf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zbxc4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_tpbov",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Season",
+   "options": "Season"
+  },
+  {
+   "columns": 2,
+   "fieldname": "total_numbers_of_vehicle",
+   "fieldtype": "Float",
+   "label": "Total Numbers Of Vehicle",
+   "precision": "0"
+  },
+  {
+   "fieldname": "vehicle__reporting_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Vehicle  Reporting"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "column_break_gg0uh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reporter_name",
+   "fieldtype": "Data",
+   "label": "Reporter Name"
+  },
+  {
+   "fieldname": "vehicle_contract_section",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Contract"
+  },
+  {
+   "fieldname": "section_break_7vzt3",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "vehicle_reporting",
+   "fieldtype": "Table",
+   "label": "Vehicle Reporting ",
+   "options": "Vehicle Reporting item"
+  },
+  {
+   "fieldname": "column_break_brh7n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mxpru",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_yluyt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_oc4x2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "h_and_t_contract",
+   "fieldtype": "Link",
+   "label": "H and t Contract",
+   "options": "H and T Contract"
+  },
+  {
+   "fieldname": "transporter_code",
+   "fieldtype": "Link",
+   "label": "Transporter Code",
+   "options": "Farmer List"
+  },
+  {
+   "fieldname": "no_of_vehicle",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "No of Vehicle",
+   "precision": "0"
+  },
+  {
+   "fieldname": "column_break_auaib",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vehicle_number",
+   "fieldtype": "Data",
+   "label": "Vehicle Number"
+  },
+  {
+   "fieldname": "vehicle_type",
+   "fieldtype": "Link",
+   "label": "Vehicle Type",
+   "options": "Vehicle Type"
+  },
+  {
+   "fieldname": "trolly__1",
+   "fieldtype": "Data",
+   "label": "TROLLY  1   ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "trolly_2",
+   "fieldtype": "Data",
+   "label": "TROLLY 2",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-14 11:38:57.501306",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Vehicle Registration",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

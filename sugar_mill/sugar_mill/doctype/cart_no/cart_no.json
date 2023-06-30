@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-04-27 11:54:36.287565",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cart_no",
+  "h_and_t_contract",
+  "flag"
+ ],
+ "fields": [
+  {
+   "fieldname": "cart_no",
+   "fieldtype": "Int",
+   "label": "Cart No"
+  },
+  {
+   "fieldname": "h_and_t_contract",
+   "fieldtype": "Link",
+   "label": "H and T Contract",
+   "options": "H and T Contract"
+  },
+  {
+   "default": "0",
+   "fieldname": "flag",
+   "fieldtype": "Int",
+   "label": "flag",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-29 13:26:17.596699",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Cart No",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

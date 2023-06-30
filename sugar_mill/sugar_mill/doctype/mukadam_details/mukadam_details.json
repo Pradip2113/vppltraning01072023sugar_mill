@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:mukadam_name",
+ "creation": "2023-03-22 16:55:16.752487",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "mukadam_details_section",
+  "mukadam_name",
+  "column_break_3",
+  "mobile_no",
+  "address",
+  "column_break_6",
+  "village",
+  "taluka",
+  "column_break_10",
+  "district",
+  "state"
+ ],
+ "fields": [
+  {
+   "fieldname": "mukadam_details_section",
+   "fieldtype": "Section Break",
+   "label": "Mukadam Details"
+  },
+  {
+   "fieldname": "mukadam_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mukadam Name (\u092e\u0941\u0915\u093e\u0926\u092e\u093e\u091a\u0947 \u0928\u093e\u0935)",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Village (\u0917\u093e\u0935)",
+   "options": "Village",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile No. (\u092e\u094b\u092c\u093e\u0908\u0932 \u0928\u0902.)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Address (\u092a\u0924\u094d\u0924\u093e)",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "village.taluka",
+   "fieldname": "taluka",
+   "fieldtype": "Data",
+   "label": "Taluka (\u0924\u093e\u0932\u0941\u0915\u093e)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "village.district",
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District (\u091c\u093f\u0932\u094d\u0939\u093e)",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "village.state",
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State (\u0930\u093e\u091c\u094d\u092f)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-26 12:16:02.220578",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Mukadam Details",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

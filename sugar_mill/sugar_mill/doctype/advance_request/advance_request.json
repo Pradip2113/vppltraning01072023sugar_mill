@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-23 09:57:03.506518",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "contractor_name",
+  "column_break_nshia",
+  "transporter_code",
+  "transporter_name",
+  "column_break_euttc",
+  "season",
+  "column_break_gwhp0",
+  "plant",
+  "column_break_7nd1s",
+  "vehicle_type",
+  "column_break_ml1p3",
+  "gang_type",
+  "section_break_l0l52",
+  "items",
+  "column_break_dikrq",
+  "column_break_rpi51",
+  "amount_limit",
+  "paid_amount_till_today",
+  "amount_to_be_paid",
+  "remaining_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "label": "Season",
+   "options": "Season"
+  },
+  {
+   "fieldname": "column_break_gwhp0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "label": "Plant",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "column_break_7nd1s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vehicle_type",
+   "fieldtype": "Link",
+   "label": "Vehicle Type",
+   "options": "Vehicle Type"
+  },
+  {
+   "fieldname": "column_break_ml1p3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gang_type",
+   "fieldtype": "Link",
+   "label": "Gang Type",
+   "options": "Gang Type"
+  },
+  {
+   "fieldname": "section_break_l0l52",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contractor_name",
+   "fieldtype": "Link",
+   "label": "Contractor ID",
+   "options": "H and T Contract"
+  },
+  {
+   "fieldname": "column_break_euttc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_dikrq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_nshia",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "contractor_name.transporter_code",
+   "fieldname": "transporter_code",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Transporter Code",
+   "options": "Supplier"
+  },
+  {
+   "fetch_from": "contractor_name.transporter_name",
+   "fieldname": "transporter_name",
+   "fieldtype": "Data",
+   "label": "Contractor Name"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "naming series",
+   "options": "FA-#.\nNG-#."
+  },
+  {
+   "fieldname": "paid_amount_till_today",
+   "fieldtype": "Currency",
+   "label": "Paid Amount Till Today"
+  },
+  {
+   "fieldname": "amount_limit",
+   "fieldtype": "Currency",
+   "label": "Amount Limit"
+  },
+  {
+   "fieldname": "amount_to_be_paid",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Amount To Be Paid"
+  },
+  {
+   "fieldname": "remaining_amount",
+   "fieldtype": "Currency",
+   "label": "Remaining Amount "
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Advance Request item"
+  },
+  {
+   "fieldname": "column_break_rpi51",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-30 14:59:58.014324",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Advance Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

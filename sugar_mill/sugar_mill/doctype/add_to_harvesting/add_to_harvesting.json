@@ -1,0 +1,276 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{date}-{####}",
+ "creation": "2023-04-25 12:00:34.651361",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "crop_plantation_dates_section",
+  "from_date",
+  "column_break_tnqrd",
+  "to_date",
+  "column_break_llzv1",
+  "season",
+  "column_break_bbrqg",
+  "column_break_gqn1g",
+  "village",
+  "column_break_wsmyd",
+  "circle_office",
+  "column_break_1v2w1",
+  "crop_variety",
+  "column_break_qtteo",
+  "crop_type",
+  "section_break_bvhwb",
+  "select_range_of_brix_column",
+  "from_brix",
+  "column_break_3u1v5",
+  "to_brix",
+  "select_range_of_pairs",
+  "from_pairs",
+  "column_break_zovcs",
+  "to_pairs",
+  "section_break_wyb2s",
+  "issue_list",
+  "column_break_r5oyn",
+  "column_break_jgjgu",
+  "column_break_9wpjk",
+  "column_break_dwbne",
+  "column_break_igbha",
+  "check",
+  "section_break_byg1o",
+  "crop_sampling_data",
+  "date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "crop_plantation_dates_section",
+   "fieldtype": "Section Break",
+   "label": "Crop Plantation Dates"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_tnqrd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_bbrqg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "2023-24",
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "label": " Season",
+   "options": "Season",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_gqn1g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Waddi",
+   "fieldname": "village",
+   "fieldtype": "Table MultiSelect",
+   "label": "Village",
+   "options": "Village Link",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_wsmyd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Miraj",
+   "fieldname": "circle_office",
+   "fieldtype": "Table MultiSelect",
+   "label": "Circle Office",
+   "options": "Circle Office Link",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1v2w1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "86032-CO",
+   "fieldname": "crop_variety",
+   "fieldtype": "Table MultiSelect",
+   "label": "Crop variety",
+   "options": "Crop Variety Link",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_bvhwb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_r5oyn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "check",
+   "fieldtype": "Button",
+   "label": "Select All"
+  },
+  {
+   "fieldname": "section_break_byg1o",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "crop_sampling_data",
+   "fieldtype": "Table",
+   "label": "Crop Sampling Data",
+   "options": "Child Crop Sampling Data"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Date"
+  },
+  {
+   "default": "1",
+   "fieldname": "from_brix",
+   "fieldtype": "Float",
+   "label": "From Brix",
+   "precision": "1"
+  },
+  {
+   "fieldname": "column_break_3u1v5",
+   "fieldtype": "Column Break",
+   "label": "."
+  },
+  {
+   "default": "1",
+   "fieldname": "to_brix",
+   "fieldtype": "Float",
+   "label": "To Brix",
+   "precision": "1"
+  },
+  {
+   "fieldname": "select_range_of_pairs",
+   "fieldtype": "Column Break",
+   "label": "Select Range of Pairs"
+  },
+  {
+   "default": "1",
+   "fieldname": "from_pairs",
+   "fieldtype": "Float",
+   "label": "From Pairs",
+   "precision": "1"
+  },
+  {
+   "fieldname": "column_break_zovcs",
+   "fieldtype": "Column Break",
+   "label": "                                     ."
+  },
+  {
+   "default": "1",
+   "fieldname": "to_pairs",
+   "fieldtype": "Float",
+   "label": "To Pairs",
+   "precision": "1"
+  },
+  {
+   "fieldname": "section_break_wyb2s",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "select_range_of_brix_column",
+   "fieldtype": "Column Break",
+   "label": "Select Range of Brix"
+  },
+  {
+   "fieldname": "issue_list",
+   "fieldtype": "Button",
+   "label": "Issue List"
+  },
+  {
+   "fieldname": "column_break_jgjgu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_9wpjk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dwbne",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_igbha",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_qtteo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "crop_type",
+   "fieldtype": "Table MultiSelect",
+   "label": "Crop Type",
+   "options": "Crop Type Link",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_llzv1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Add to Harvesting",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-05-10 11:03:53.387190",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Add to Harvesting",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

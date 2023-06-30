@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-13 10:20:27.956278",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "basel",
+  "pre_earthing",
+  "earth",
+  "rainy",
+  "ratoon_1",
+  "ratoon_2",
+  "qty",
+  "item_name",
+  "description",
+  "stock_uom",
+  "uom",
+  "rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "basel",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Basel",
+   "precision": "1"
+  },
+  {
+   "fieldname": "pre_earthing",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Pre Earthing",
+   "precision": "1"
+  },
+  {
+   "fieldname": "earth",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Earth",
+   "precision": "1"
+  },
+  {
+   "fieldname": "rainy",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rainy",
+   "precision": "1"
+  },
+  {
+   "fieldname": "ratoon_1",
+   "fieldtype": "Float",
+   "label": "Ratoon 1"
+  },
+  {
+   "fieldname": "ratoon_2",
+   "fieldtype": "Float",
+   "label": "Ratoon 2"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Total"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fetch_from": "item_code.description",
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fetch_from": "item_code.stock_uom",
+   "fieldname": "stock_uom",
+   "fieldtype": "Data",
+   "label": "Stock UOM"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "label": "UOM"
+  },
+  {
+   "fetch_from": "item_code.standard_rate",
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "label": "Rate"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-05-13 12:47:33.096686",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Agriculture Development Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

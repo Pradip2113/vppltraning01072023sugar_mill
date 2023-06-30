@@ -1,0 +1,512 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"UO17_Hw5xI\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Vendor Registration\",\"col\":3}},{\"id\":\"erKHZTVldD\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cane Registration \",\"col\":3}},{\"id\":\"4faUMzZHry\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"H and T Contract\",\"col\":3}},{\"id\":\"qfA5wKIbwH\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Agriculture Development\",\"col\":3}},{\"id\":\"hR9ZMXOlbq\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"vtGvZ7pTCN\",\"type\":\"card\",\"data\":{\"card_name\":\"Master\",\"col\":3}},{\"id\":\"jbID6wNf8O\",\"type\":\"card\",\"data\":{\"card_name\":\"Farm Master\",\"col\":3}},{\"id\":\"8glf4HD18P\",\"type\":\"card\",\"data\":{\"card_name\":\"Process Step\",\"col\":3}},{\"id\":\"bGEWF_6Zcy\",\"type\":\"card\",\"data\":{\"card_name\":\"Formula\",\"col\":3}},{\"id\":\"ednssoIEsd\",\"type\":\"card\",\"data\":{\"card_name\":\"Cane Billing\",\"col\":3}},{\"id\":\"4nHWgq4JaE\",\"type\":\"card\",\"data\":{\"card_name\":\"Farmer Loan\",\"col\":4}}]",
+ "creation": "2023-03-29 13:21:03.253684",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "organization",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Sugar Mill",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cane Registration",
+   "link_count": 0,
+   "link_to": "Cane Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Add To Sampling",
+   "link_count": 0,
+   "link_to": "Add To Sampling",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Crop Sampling",
+   "link_count": 0,
+   "link_to": "Crop Sampling",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Crop Harvesting",
+   "link_count": 0,
+   "link_to": "Crop Harvesting",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cane Inward Slip",
+   "link_count": 0,
+   "link_to": "Cane Inward Slip",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cane Weight",
+   "link_count": 0,
+   "link_to": "Cane Weight",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Farm Master",
+   "link_count": 10,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Crop Name",
+   "link_count": 0,
+   "link_to": "Crop Name",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Crop Type",
+   "link_count": 0,
+   "link_to": "Crop Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Soil Type",
+   "link_count": 0,
+   "link_to": "Soil Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cane Variety",
+   "link_count": 0,
+   "link_to": "Cane Variety",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Plantation System",
+   "link_count": 0,
+   "link_to": "Plantation System",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Maturity Period",
+   "link_count": 0,
+   "link_to": "Maturity Period",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Irrigation Method",
+   "link_count": 0,
+   "link_to": "Irrigation Method",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Irrigation Source",
+   "link_count": 0,
+   "link_to": "Irrigation Source",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Dose Type",
+   "link_count": 0,
+   "link_to": "Dose Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Seed Material Used",
+   "link_count": 0,
+   "link_to": "Seed Material Used",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cane Billing",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cane Billing",
+   "link_count": 0,
+   "link_to": "Cane Billing",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Account Priority",
+   "link_count": 0,
+   "link_to": "Account Priority",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Process Step",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Add To Sampling",
+   "link_count": 0,
+   "link_to": "Add To Sampling",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Crop Sampling",
+   "link_count": 0,
+   "link_to": "Crop Sampling",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cane Slip",
+   "link_count": 0,
+   "link_to": "Cane Inward Slip",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Back To Sampling",
+   "link_count": 0,
+   "link_to": "Back To Sampling",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fertilizer Material Request",
+   "link_count": 0,
+   "link_to": "Fertilizer Material Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Farmer Loan",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Farmer Loan",
+   "link_count": 0,
+   "link_to": "Farmer Loan",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Farmer Loan Application",
+   "link_count": 0,
+   "link_to": "Farmer Loan Application",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Farmer Loan Type",
+   "link_count": 0,
+   "link_to": "Farmer Loan Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Season Wise Advance Configuration",
+   "link_count": 0,
+   "link_to": "Season Wise Advance",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Advance Request",
+   "link_count": 0,
+   "link_to": "Advance Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Master",
+   "link_count": 8,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vendor List View",
+   "link_count": 0,
+   "link_to": "Vendor List View",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Village",
+   "link_count": 0,
+   "link_to": "Village",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Route",
+   "link_count": 0,
+   "link_to": "Route",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Circle Office",
+   "link_count": 0,
+   "link_to": "Circle Office",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Taluka",
+   "link_count": 0,
+   "link_to": "Taluka",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "District",
+   "link_count": 0,
+   "link_to": "District",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "State",
+   "link_count": 0,
+   "link_to": "State",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bank Master",
+   "link_count": 0,
+   "link_to": "Bank Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Formula",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Dose Type",
+   "link_count": 0,
+   "link_to": "Dose Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle Registration",
+   "link_count": 0,
+   "link_to": "Vehicle Registration",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cane Sampling Formula",
+   "link_count": 0,
+   "link_to": "Cane Sampling Formula",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Slip Boy Access",
+   "link_count": 0,
+   "link_to": "Slip Boy Assignment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-06-29 17:31:33.986593",
+ "modified_by": "Administrator",
+ "module": "Sugar Mill",
+ "name": "Sugar Mill",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Agriculture Manager"
+  },
+  {
+   "role": "Agriculture User"
+  }
+ ],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Vendor Registration",
+   "link_to": "Farmer List",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Cane Registration ",
+   "link_to": "Cane Master",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "H and T Contract",
+   "link_to": "H and T Contract",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Agriculture Development",
+   "link_to": "Agriculture Development",
+   "type": "DocType"
+  }
+ ],
+ "title": "Sugar Mill"
+}
